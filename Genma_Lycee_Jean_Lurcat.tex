@@ -1,0 +1,870 @@
+\documentclass{beamer}
+\mode<presentation> {
+\usepackage{color}
+\definecolor{bottomcolour}{rgb}{0.21,0.11,0.21}
+\definecolor{middlecolour}{rgb}{0.21,0.11,0.21}
+\setbeamercolor{structure}{fg=white}
+\setbeamertemplate{frametitle}[default]%[center]
+\setbeamercolor{normal text}{bg=black, fg=white}
+\setbeamertemplate{background canvas}[vertical shading]
+[bottom=bottomcolour, middle=middlecolour, top=black]
+\setbeamertemplate{items}[circle]
+\setbeamertemplate{navigation symbols}{} %no nav symbols
+\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!50!red!50!blue!100!green}
+\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!5!white!10!bg,fg=white}
+\setbeamertemplate{navigation symbols}{}
+}
+\usepackage{graphicx} 
+\usepackage{booktabs} 
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}  
+\usepackage{geometry}     
+%\usepackage[francais]{babel} 
+\usepackage{eurosym}
+\usepackage{verbatim}
+\usepackage{ragged2e}
+\justifying
+
+\input{cc_beamer}
+
+\title[Reprenons le contrôle de notre vie privée sur Internet]{Reprenons le contrôle \\de notre vie privée sur Internet
+\\~\\
+Lycée Jean Lurcat
+} 
+\date{30 novembre 2015}
+
+\author{Genma}
+
+\begin{document}
+
+%% Titlepage
+\begin{frame}
+	\titlepage
+	\vfill
+	\begin{center}
+		\CcGroupByNcSa{0.83}{0.95ex}\\[2.5ex]
+		{\tiny\CcNote{\CcLongnameByNcSa}}
+		\vspace*{-2.5ex}
+	\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Qui suis-je?}
+
+\begin{block}{Jérôme...}
+\begin{itemize}
+\justifying{
+\item Mon prénom civil, avec une identité numérique associée.
+}
+\end{itemize}
+\end{block}
+
+\begin{block}{mais surtout Genma!}
+\begin{itemize}
+\justifying{
+\item Auteur du blog \emph{le Blog de Genma} \url{http://genma.free.fr} depuis 2004
+\item Identité numérique publique, assez forte (Réseaux sociaux) et \emph{cohérente}.
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{\includegraphics[scale=0.4]{./images/Genma.jpg} \ \ \  A propos de moi  }
+\begin{columns}[c] 
+\column{.55\textwidth} 
+\textbf{Où me trouver sur Internet?}
+\begin{itemize}
+\item Le Blog de Genma : http://genma.free.fr
+\item Twitter : @genma
+\end{itemize}
+\column{.5\textwidth} 
+\includegraphics[scale=0.40] {./images/blog.png} 
+\end{columns}
+\end{frame}
+
+
+%--------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{L'évolution d'Internet\\en quelques mots...}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Internet, un réseau de réseau}
+
+\begin{block}{Internet c'est un réseau de réseau d'ordinateurs connectés entre eux.}
+\begin{itemize}
+\justifying{
+\item Il y a d'un côté les serveurs, des gros ordinateurs, sur lesquels il y a des sites Internet.
+\item Et de l'autre, il y a "nous", avec notre PC, notre tablette, notre smartphone...
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Internet : 3 phases}
+\begin{block}{Web 1.0}
+\justifying{
+Des images fixes, des pages fixes, des forums...
+\begin{itemize}
+\justifying{
+\item L'usage d'un pseudonyme était courant voir une évidence.
+}
+\end{itemize}
+}
+\end{block}
+
+\begin{block}{Web 2.0}
+\begin{itemize}
+\justifying{
+\item Les blogs, la possibilité de laisser des commentaires
+\item Apparition des wikis (Wikipedia)
+}
+\end{itemize}
+\end{block}
+
+\begin{block}{Web 2.5}
+\justifying{
+Apparition de Facebook, Twitter....
+}
+\begin{itemize}
+\justifying{
+\item L'usage de son identité civile devient obligatoire...
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{L'identité numérique}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{L'identité numérique c'est quoi?}
+
+\begin{block}{Définition}
+\begin{itemize}
+\justifying{
+\item L'identité numérique, c'est l'ensemble des données publiques que l'on peut trouver sur Internet et rattacher à une personne, en l'occurrence moi.
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+\frametitle{E-réputation}
+
+\begin{block}{Par où commencer ?}
+\begin{itemize}
+\justifying{
+\item Quelle image je donne de moi ?
+\item Que trouve-t-on sur moi comme informations quand on tape mes "nom, prénom" dans un moteur de recherche ?
+}
+\end{itemize}
+\end{block}
+
+\begin{block}{Les questions à de poser}
+\begin{itemize}
+\justifying{
+\item Suis en capacité d'assumer tout ce que l'on trouve sur moi ? De le justifier ?
+\item Est-ce qu'il y a des choses que je voudrais cacher ?
+\item Que je regrette ?
+}
+\end{itemize}
+\end{block}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+\frametitle{Taper son nom dans Google}
+\begin{center}
+\includegraphics[scale=0.5] {./images/Google01.png} 
+\includegraphics[scale=0.5] {./images/Google02.png} 
+\end{center}
+\end{frame}
+%-----------------------------------------------
+\begin{frame}
+\huge{
+La quasi totalité des informations que l'on trouve sur nous, ce sont des informations que NOUS avons mises en ligne (via les réseaux sociaux par exemple).}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Diffusion de photos et autres selfies...}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Les photos de nous en soirée}
+\begin{center}
+\includegraphics[scale=0.5] {./images/Leak01.jpg} 
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Diffusion de photos et autres selfies...}
+\begin{center}
+\includegraphics[scale=0.5] {./images/Leak02.png} 
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Les photos intimes}
+\begin{center}
+\includegraphics[scale=0.6] {./images/Leak04.jpg} 
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Réserver les comptes}
+
+\begin{block}{Ne pas s'inscrire partout}
+\begin{itemize}
+\justifying{
+\item Ca ne sert à rien.
+\item C'est une \emph{Perte de temps}.
+\item Si ce n'est pour "réserver/bloquer" le compte, pour éviter une usurpation par quelqu'un d'autre.
+}
+\end{itemize}
+\end{block}
+\justifying{Et surtout ne pas mettre le même mot de passe partout...}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Le syndrôme téléréalité}
+
+\begin{block}{Ne pas vouloir être \emph{une star}}
+\begin{itemize}
+\justifying{
+\item Ne pas chercher à avoir le plus grand nombre de personnes ;
+\item Ne pas exposer sa vie que ce soit avec des photos, vidéos ou des messages.
+}
+\end{itemize}
+\end{block}
+Rappel : ce n'est pas parce qu'on est derrière un écran qu'on doit faire n'importe quoi.
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Un peu de sérieux :-)}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Adage}
+\begin{block}{Les paroles s'envolent, les écrits restent}
+\begin{itemize}
+\justifying{
+\item Cet adage est encore plus vrai avec Internet.
+\item  Il faut partir du principe que ce que l'on dit sera toujours accessible, même des années après.
+\item Tout ce qui est sur Internet est public ou le sera (même si c'est "privé". Les conditions d'utilisation évoluent. Cf. Facebook).
+\item Il ne faut donc pas abuser de la liberté d'expression et rester respectueux des lois en vigueur.
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{La netiquette}
+
+\begin{block}{Définition}
+\justifying{
+La nétiquette est une règle informelle, puis une charte qui définit les règles de conduite et de politesse recommandées sur les premiers médias de communication mis à disposition par Internet. Il s'agit de tentatives de formalisation d'un certain contrat social pour l'Internet.
+}
+\end{block}
+\justifying{
+En résumé ce sont les règles de savoir-vivre et de respect que l'on devrait tou-te-s avoir sur Internet.}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Le pseudonymat}
+\includegraphics[scale=0.5] {./images/bannierepseudonymat.jpg} 
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Le pseudonymat}
+
+\begin{block}{Défintions}
+\begin{itemize}
+\justifying{
+\item Contraction des termes pseudonyme et anonymat, le terme de pseudonymat reflète assez bien la volonté contradictoire d’être un personnage public et de rester anonyme...
+\item Un pseudonyme, c'est aussi une identité publique, qui est associée à un ensemble cohérent de comptes qui forment un tout : un blog, un compte Twitter, un compte Facebook…
+}
+\end{itemize}
+\justifying{
+L'identité numérique est l'ensemble des données publiques associées à cette identité. 
+}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemples}
+\begin{center}
+\includegraphics[scale=0.5] {./images/blog.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Exemples}
+\begin{center}
+Linkedin\\~\\
+\includegraphics[scale=0.4] {./images/Linkedin.png} 
+\\
+Twitter @genma\\
+\includegraphics[scale=0.4] {./images/Twitter.png}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Le pseudonymat}
+
+\begin{block}{Attention}
+\justifying{
+Avoir un pseudonyme ne veut pas dire faire et dire n'importe quoi.
+\\~\\Il en va de l'image que je renvoie, que je donne de moi et de ma crédibilité présente et à venir.
+}
+\end{block}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Les avantages du pseudonymat}
+
+\begin{block}{Ce que permet le pseudonymat}
+\justifying{Il permet de cloisonner sa vie numérique.}
+\begin{itemize}
+\justifying{
+\item On a une une identité civile en ligne (nom, prénom) avec le strict minimum.
+\item Et une identité publique, un pseudonyme, qui permet d'avoir une activité plus fournie.
+}
+\end{itemize}
+\end{block}
+\justifying{
+Ne pas oublier d'avoir une adresse mail qui ne soit pas de la forme prénom.nom (sinon on perd l'intérêt du pseudonyme).
+}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Plusieurs pseudonymes}
+
+\begin{block}{Plusieurs comptes}
+\justifying{
+Un pseudonyme par type de communauté fréquenté (jeu vidéo, informatique, de rencontres...).
+}
+\end{block}
+
+\justifying{
+S’il y a un problème (\emph{compte piraté}), on limitera le risque de diffusion des informations personnelles.
+}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Pseudonymat et célébrité}
+
+\justifying{Nombreuses sont les célébrités du monde de la télévision, cinéma, musique… Et Internet?}
+\begin{block}{Des pseudonymes internet \emph{connus}}
+\begin{itemize}
+\justifying{
+\item Maitre Eolas, l'avocat
+\item Zythom, l'expert judiciaire
+\item Boulet, dessinateur
+\item ...
+}
+\end{itemize}
+\end{block}
+\justifying{Et beaucoup d'autres, dans les communautés geek, hackers...}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Les limites du pseudonymat}
+
+\begin{block}{Un pseudonymat c'est contraignant}
+
+\justifying{On est très facilement tracés et reliés à sa véritable identité (via l'adresse IP).}
+\begin{itemize}
+\justifying{
+\item Pour avoir un pseudonymat parfaitement cloisonné, il faut utiliser différentes techniques avancées…
+}
+\end{itemize}
+\end{block}
+
+\begin{block}{NE JAMAIS faire d'erreur}
+\begin{itemize}
+\justifying{
+\item On ne dévoile pas son pseudonyme a des personnes qui connaissent notre identité civile.
+\item On ne dévoile pas son visage en public…
+}
+\end{itemize}
+\end{block}
+\justifying{
+Le pseudonymat est donc on ne peut plus relatif et tout dépend de ce que l'on souhaite comme pseudonymat.
+}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Les \emph{risques} des réseaux sociaux}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Les risques des réseaux sociaux}
+
+\begin{block}{Centralisation des données}
+\justifying{
+En un seul endroit (Facebook par exemple), il y a énormément d'informations personnelles qui sont cumulées.
+\begin{itemize}
+\item Ces données peuvent être accessibles par n'importe qui, si le compte est \emph{mal configuré}.
+\item Risque d'attaque de type \emph{social engineering}.
+\end{itemize}
+}
+\end{block}
+
+\begin{block}{Si c'est gratuit, c'est vous le produit}
+\justifying{
+\begin{itemize}
+\item Ces données sont revendues et exploitées.
+\end{itemize}
+}
+\end{block}
+
+\justifying{
+D'où l'importance de se créer une identité numérique sous pseudonyme, sur laquelle on a un contrôle \emph{relatif}.
+}
+\end{frame}
+
+
+%========================================================================================
+\begin{frame}
+\begin{center}
+\Huge{Comment se protéger ?\\ Un peu d'hygiène numérique}
+\\~\\
+\includegraphics[scale=0.5]{./images/nettoyer_son_clavier.jpg}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{L'hygiène numérique?}
+\begin{block}{Une définition?}
+\justifying{
+L'hygiène est un ensemble de mesures destinées à prévenir les infections et l'apparition de maladies infectieuses.
+\\
+L'hygiène numérique, ce sont des règles destinées à mieux utiliser son ordinateur, en sécurité, de façon simple.
+}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\Huge{\centerline{Quelques exemples?}}
+\end{frame}
+
+\begin{frame}
+\frametitle{Les règles de sécurité}
+\begin{center}
+\includegraphics[scale=0.3] {./images/sadgizmo_large.jpeg}
+\end{center}
+
+\justifying{
+\begin{block}{}
+\begin{itemize}
+\item Ne pas exposer l'animal à la lumière — et plus spécialement à celle du soleil qui le tuerait, 
+\item Ne pas le mouiller, 
+\item Et surtout, quoi qu'il arrive, ne jamais lui donner à manger après minuit.
+\end{itemize}
+\end{block}
+}
+\end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\Huge{\centerline{Les mots de passe}}
+
+\begin{center}
+\includegraphics[scale=0.6] {./images/password.png}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Sécuriser ses comptes}
+
+\begin{block}{Un bon mot de passe...}
+\justifying{
+Est idéalement une phrase de passe.
+\begin{itemize}
+\item "LaLuneRougeEtLeSoleilVert" est un meilleur mot de passe que R0x0r75.
+\item Plusieurs mots du dictionnaires sans liens.
+\end{itemize}
+}
+Point important : \textbf{Un mot de passe différent par compte}.
+\end{block}
+
+\begin{block}{Double authentification}
+\justifying{
+\begin{itemize}
+\item On reçoit un code à usage unique sur son téléphone.
+\end{itemize}
+}
+\end{block}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Conclusion}
+\end{center}
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+\frametitle{Conclusion}
+
+\begin{block}{
+\justifying{La maîtrise de son identité numérique en ligne repose avant tout sur soi-même}}
+\begin{itemize}
+\justifying{
+\item Il ne faut pas \emph{tout} dire ou mettre sur les réseaux sociaux ;
+\item Il faut essayer de compartimenter ses différentes vies numériques (en sachant jusqu'où on veut et jusqu'où on est prêt à aller).
+}
+\end{itemize}
+\end{block}
+
+\begin{block}{
+\justifying{Sur Internet, on ne fait pas n'importe quoi}}
+\begin{itemize}
+\justifying{
+\item On est responsable des propos que l'on tient vis-à-vis de la loi.
+\item L'anonymat existe mais est \emph{presque} une utopie.
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Merci de votre attention. \\Place aux questions.
+\\Et suivez moi sur Twitter ;-) @genma\\
+\includegraphics[scale=0.2] {./images/chat.jpg}
+}\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Annexes }
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Café vie privée, chiffrofête, cryptoparty}
+\\~\\
+\includegraphics[scale=0.3] {./images/LogoCafeViePrivee.jpg}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\Huge{\centerline{Toutes ces traces qu'on laisse}}
+\Huge{\centerline{sur Internet... sans le savoir}}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Les données qui sont prises à notre insu}
+\includegraphics[scale=0.45] {./images/Lightbeam.jpg} 
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Cloud - l'informatique dans les nuages}
+\begin{block}{Définition du cloud}
+\justifying{
+\begin{itemize}
+\item Le \emph{Cloud} , c'est l'ordinateur d'un autre.
+\end{itemize}
+}
+\begin{center}
+\includegraphics[scale=0.5] {./images/cloud.png} 
+\end{center}
+\end{block}
+\end{frame}
+%----------------------------------------------------------------------------------------
+
+\begin{frame}
+\begin{center}
+\Huge{LES GAFAMs}\\~\\
+\includegraphics[scale=0.5] {./images/gafam.jpg} 
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Les GAFAM}
+\begin{block}{GAFAM : Google, Apple, Facebook, Amazon, Microsoft}
+\begin{itemize}
+\justifying{
+\item Concentration des acteurs d’Internet autour de silos ;
+\item Une centralisation nuisible (frein à l'innovation) ;
+\item Les utilisateurs de ces services ne contrôlent plus leur vie numérique.
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Sur Internet, si c'est gratuit, c'est VOUS le produit}
+\end{center}
+\end{frame}
+
+%========================================================================================
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.5] {./images/nothingtohide.png} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{L'espionnage 1/2}
+\begin{center}
+\includegraphics[scale=0.4]{./images/snowden.png}
+\end{center}
+\begin{itemize}
+\item Snowden et ses révélations (NSA)
+\item La loi Renseignement en France...
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{L'espionnage 2/2}
+\begin{itemize}
+\item Notre voisin
+\item Notre "ex"
+\item Notre collègue de boulot...
+\end{itemize}
+\includegraphics[scale=0.55]{./images/nixon.jpg}
+\includegraphics[scale=0.4]{./images/girlfriend.jpg}
+\end{frame}
+
+\begin{frame}
+\frametitle{La différence entre la vie privée et la sécurité en une image}
+\begin{center}
+\includegraphics[scale=0.4]{./images/Security_Privacy.jpg}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Différents \emph{modèles de menace}}
+\begin{block}{Répondre aux questions}
+\justifying{
+Pour se faire un avis \url{http://jenairienacacher.fr/}
+\begin{itemize}
+\justifying{
+\item Quelles sont les données et informations que j'estime personnelles - confidentielles? 
+\item Qu'est ce que je suis prêt-e à apprendre et à faire pour les protéger?
+\item Usage d'un pseudonyme...
+}
+\end{itemize}
+}
+\end{block}
+
+\begin{center}
+\includegraphics[scale=0.4]{./images/bannierepseudonymat.jpg}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Navigateur}\\~\\
+\includegraphics[scale=0.3] {./images/firefox.jpg}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Installer des extensions}
+\begin{center}
+\includegraphics[scale=0.75] {./images/extensions_firefox.jpg}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Microblock - Bloquer les publicités}
+\begin{center}
+\includegraphics[scale=0.4] {./images/Adblock02.png}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Ghostery, Privacy Badger, Noscript...}
+Bloque tous les trackers associés au site.
+\begin{center}
+\includegraphics[scale=0.4] {./images/Ghostery_tracker.png}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Changer de moteur de recherche}
+\\~\\
+\includegraphics[scale=2] {./images/dontbeevil.jpg}
+\end{center}
+\end{frame}
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\frametitle{Duckduckgo - Google tracks you. We don't.}
+
+\url{https://duckduckgo.com}
+\\~\\
+\includegraphics[scale=0.6] {./images/DuckDuckGo.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\frametitle{Par Framasoft}
+
+Framabee \url{https://framabee.org} \\ou TontonRoger \url{https://tontonroger.org/}
+\\~\\
+\includegraphics[scale=0.6] {./images/Framabee.jpg}
+\end{center}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\frametitle{Qwant}
+
+\url{https://qwant.com}
+\\~\\
+\includegraphics[scale=0.6] {./images/Qwant.jpg}
+\end{center}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{L'anonymat}
+
+\justifying{
+Il est possible d'être anonyme sur Internet. Mais cela est TRÈS compliqué et la moindre erreur (qui ne sera pas toujours celle à laquelle on pense, voir le cas de Silk Road) fera que l'on n'est plus anonyme.
+\\~\\
+Il est \emph{assez facile} de retrouver l'auteur d'un commentaire diffamatoire, raciste ou autre (tant que ce dernier n'a pas utilisé d'outil d'anonymisation avancé comme Tor).
+}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Tor ? }
+\\~\\ \includegraphics[scale=0.4]{./images/logo_tor.jpg}
+\end{center}
+\end{frame}
+
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\begin{center}
+\Huge{Le droit à l’oubli}
+\end{center}
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+\frametitle{Le droit à l’oubli}
+
+\begin{block}{Définition}
+\justifying{
+Il permet à un individu de demander le retrait de certaines informations qui pourraient lui nuire sur des actions qu'il a faites dans le passé. 
+\\~\\
+Le droit à l'oubli s'applique concrètement soit par le retrait de l'information sur le site d'origine, on parle alors du droit à l'effacement, soit par un déréférencement du site par les moteurs de recherche, on parle alors du droit au déréférencement.
+}
+\end{block}
+\end{frame}
+
+%-----------------------------------------------
+\begin{frame}
+\frametitle{Les problématiques soulevées par le droit à l'oubli}
+
+\begin{block}{Les questions que cela soulève…}
+\begin{itemize}
+\justifying{
+\item Le droit à l'oubli entre en conflit avec ceux de l'information et de l'expression.
+\item Quid de la censure ?
+\item Internet n'a pas de frontières…
+\item "L'effet Streisand".
+}
+\end{itemize}
+\end{block}
+\end{frame}
+
+%----------------------------------------------------------------------------------------
+\begin{frame}
+\frametitle{Qui a modifié quoi sur Wikipedia ?}
+\begin{center}
+\includegraphics[scale=0.7] {./images/wikpedia_ip.jpg} 
+\end{center}
+\end{frame}
+
+\begin{frame}
+\frametitle{Comment un pseudonymat peut voler en éclat ?}
+\begin{itemize}
+\justifying{
+\item En publiant sur les réseaux sociaux
+\item Message du répondeur de son téléphone portable
+\item On se trompe de boite mail...
+}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{center}
+\includegraphics[scale=0.7] {./images/attention_cookies_linkedin.png} 
+\end{center}
+\end{frame}
+
+%============================================================================================
+\end{document}
